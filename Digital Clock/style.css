@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+<<<<<<< HEAD
+=======
+    width: 100%;
+>>>>>>> f91ec13 (Added all projects)
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+    background: url("images\ \(4\).jpg") no-repeat;
+=======
+    background-image: url(images\ \(4\).jpg);
+>>>>>>> f91ec13 (Added all projects)
+    background-size: cover;
+}
+
+.clock{
+<<<<<<< HEAD
+    width: 100%;
+    max-width: 380px;
+    height: 150px;
+=======
+    height: 150px;
+    width: 400px;
+    border-radius: 10px;
+>>>>>>> f91ec13 (Added all projects)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.7);
+<<<<<<< HEAD
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.clock h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.clock span{
+    position: relative;
+    top: -13px;
+    left: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 450px){
+    .clock{
+        max-width: 300px;
+        padding: 5px;
+    }
+
+=======
+}
+
+.time{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.timeFormat{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 3px;
+    margin-bottom: 30px;
+>>>>>>> f91ec13 (Added all projects)
+}

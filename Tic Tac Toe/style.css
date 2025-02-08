@@ -1,0 +1,153 @@
+*{
+<<<<<<< HEAD
+    margin: 0%;
+    padding: 0%;
+=======
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+>>>>>>> f91ec13 (Added all projects)
+}
+
+body{
+    background-color: #548687;
+<<<<<<< HEAD
+    text-align: center;
+}
+
+=======
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#win{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#new-btn{
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+>>>>>>> f91ec13 (Added all projects)
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+<<<<<<< HEAD
+}
+
+.game{
+=======
+    flex-direction: column;
+}
+
+.buttons{
+>>>>>>> f91ec13 (Added all projects)
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+<<<<<<< HEAD
+.box{
+    height: 18vh;
+    width: 18vh;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    border: none;
+    color: #b0413e;
+    box-shadow: 0 0 1rem rgba(0 0 0 0.3);
+    background-color: #ffffc7;
+}
+
+#reset-btn{
+    padding: 0.85rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 5px;
+} 
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#msg{
+    font-size: 6vmin;
+    color: #ffffc7;
+}
+
+#new-btn{
+    padding: 0.85rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.hide{
+    display: none;
+}
+=======
+main h1{
+    font-size: 30px;
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn{
+    height: 18vh;
+    width: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    color: maroon;
+    font-size: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+#reset-btn{
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+>>>>>>> f91ec13 (Added all projects)
