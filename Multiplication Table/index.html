@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplecation Table</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <h1>Multiplication Table</h1>
+            <p>Select a number(2-10):</p>
+
+            <select id="select">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button onclick="GenerateTable()">Generate Table</button>
+
+            <table id="table"></table>
+        </div>
+    </div>
+
+    <script>
+        const GenerateTable = () => {
+           const number = document.getElementById("select").value;
+           const table = document.getElementById("table");
+           table.textContent = "";
+           
+           for(let i=1; i<=10; i++) {
+               let row = table.insertRow();
+               row.insertCell(0).textContent = `${number} X ${i}:`
+               row.insertCell(1).textContent = `${number * i}:`
+           }
+        }
+    </script>
+</body>
+
+</html>

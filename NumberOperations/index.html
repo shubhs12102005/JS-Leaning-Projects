@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Number Operation</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div
+            style="margin-top: 30px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px; border: 1px solid black">
+            <h1>Number Operations</h1>
+            <input id="num" style="padding: 5px; width: 200px;" type="number" placeholder="Enter a number">
+            <select id="select" style="padding: 5px; width: 210px; margin-top: 15px;">
+                <option value="EvenOdd">Even/Odd</option>
+                <option value="Prime">Prime/Not Prime</option>
+                <option value="NegativePositive">Negative/Positive</option>
+            </select>
+
+            <p id="result"></p>
+
+            <button onclick="CheckNumber()"
+                style="margin-top: 20px; width: 200px; padding: 5px; color: #fff; background-color: rgb(0, 255, 115); outline: none; border: 1px solid black;">Check</button>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script>
+        const CheckNumber = () => {
+            const num = document.getElementById("num").value;
+            const select = document.getElementById("select").value;
+
+            let result = "";
+            if (isNaN(num)) {
+                result = "Please enter a valid number.";
+            } else {
+                switch (select) {
+                    case 'EvenOdd':
+                        result = (num % 2 == 0) ? `${num} is Even` : `${num} is odd`;
+                        break;
+
+                    case 'NegativePositive':
+                        result = (num >= 0) ? `${num} is Positive` : `${num} is Negative`;
+                        break;
+
+                    case 'Prime':
+                        result = (isPrime(num)) ? `${num} is Prime Number` : `${num} is Not a Prime Number`;
+                        break;
+                }
+            }
+            document.getElementById("result").textContent = result;
+        }
+
+        const isPrime = (num) => {
+            if (num <= 1) return false;
+            for (let i = 2; i <= Math.sqrt(num); i++) {
+                if (num % i == 0) return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

@@ -86,7 +86,6 @@ header nav div button:hover, .recipe button:hover, .recipe-close-btn:hover{
     cursor: pointer;
     max-width: 350px;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .recipe:hover{
