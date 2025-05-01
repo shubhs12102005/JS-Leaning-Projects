@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+</head>
+<body>
+    <div>
+        <h1>Fibonacci Series</h1>
+        <input id="input" type="text" placeholder="Enter a number">
+        <button onclick="GenerateFibonacci()">Generate</button>
+        <p id="para"></p>
+    </div>
+
+    <script>
+        const GenerateFibonacci = () => {
+            const num = document.getElementById("input").value;
+
+            if(isNaN(num) || num === ''){
+                alert("Enter a valid number");
+                return;
+            }
+
+            if(num < 2) {
+                alert("Number should be Greater than 2");
+                return;
+            }
+                
+            let arr = [0, 1];
+            for(let i=2; i<num; i++) {
+                arr.push(arr[i-1] + arr[i-2]);
+            }
+            document.getElementById("para").textContent = arr;
+        }
+    </script>
+</body>
+</html>

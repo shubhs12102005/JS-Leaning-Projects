@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sample Form</h1>
+    <form onsubmit="onSubmit()" style="display: flex; flex-direction: column; gap: 10px;">
+        <b>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </b>
+
+        <b>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </b>
+
+        <b>
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+        </b>
+
+        <b>
+            <label for="select">State</label>
+            <select name="select" id="select">
+                <option value="Maharastra">Maharastra</option>
+                <option value="Chattisgarh">Chattisgarh</option>
+                <option value="Kanpur">Kanpur</option>
+            </select>
+        </b>
+
+        <b>
+            <h3>Gender</h3>
+            <label for="male">Male</label>
+            <input type="radio" id="male">
+
+            <label for="female">Female</label>
+            <input type="radio" id="female">
+        </b>
+
+        <b>
+            <h3>Interests:</h3>
+            <label for="coding">Coding</label>
+            <input type="checkbox" name="" id="coding">
+
+            <label for="music">Music</label>
+            <input type="checkbox" name="" id="music">
+        </b>
+
+        <b>
+            <input type="submit" value="Submit">
+        </b>
+    </form>
+
+    <script>
+        const onSubmit = () => {
+            alert("Form is Submitted");
+        }
+    </script>
+</body>
+
+</html>
